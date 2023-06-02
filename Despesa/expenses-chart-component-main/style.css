@@ -1,0 +1,146 @@
+/* ### Primary
+
+--Soft red: hsl(10, 79%, 65%)
+--Cyan: hsl(186, 34%, 60%)
+
+### Neutral
+
+--Dark brown: hsl(25, 47%, 15%)
+--Medium brown: hsl(28, 10%, 53%)
+--Cream: hsl(27, 66%, 92%)
+--Very pale orange: hsl(33, 100%, 98%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    background-color: hsl(10, 79%, 65%);
+    width: 445px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9.6rem;
+}
+
+.title{
+    color: white;
+    padding: 1rem;
+}
+
+.pTitle{
+    font-size: 15px;
+}
+
+.numberTitle{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card{
+    width: 445px;
+    height: 445px;
+    margin-top: 1.6rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.pTitle2{
+    color: hsl(25, 47%, 15%);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.footer{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.txtFooter{
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+}
+
+.numberFooter{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.number2Footer{
+    font-weight: 700;
+}
+
+
+main .value::after{
+    content: "";
+
+    display: block;
+    width: 23rem;
+    height: 2px;
+    margin: 0 auto;
+
+  background-color: hsl(27, 66%, 92%);
+}
+
+@media only screen and (max-width:470px){
+    .content{
+        width: 345px;
+        gap: 5.6rem;
+    }
+    .card{
+        width: 345px;
+        height: 345px;}
+
+    main .value::after{
+        content: "";
+        
+        display: block;
+        width: 17rem;
+        height: 2px;
+        margin: 0 auto;
+        
+        background-color: hsl(27, 66%, 92%);
+    }
+    .txtFooter{
+        font-size: 13px;
+        color: hsl(28, 10%, 53%);
+    }
+    
+    .numberFooter{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
